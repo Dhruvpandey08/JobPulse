@@ -38,7 +38,7 @@ const Login = () => {
             });
             if (res.data.success) {
                 dispatch(setUser(res.data.user));
-                navigate("/");
+                navigate("https://jobs4you-frontend.onrender.com/");
                 toast.success(res.data.message);
             }
         } catch (error) {
@@ -50,7 +50,7 @@ const Login = () => {
     }
     useEffect(()=>{
         if(user){
-            navigate("/");
+            navigate("https://jobs4you-frontend.onrender.com/");
         }
     },[])
     return (
