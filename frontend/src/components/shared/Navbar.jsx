@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className='bg-white'>
             <div className='flex items-center justify-between mx-auto max-w-7xl h-16'>
                 <div>
-                    <button onClick={goToHome} className='text-2xl font-bold'>Jobs<span className='text-[#F83002]'>4You</span></button>
+                    <button onClick={goToHome} className='text-2xl font-bold'>Job<span className='text-[#F83002]'>Pulse</span></button>
                 </div>
                 <div className='flex items-center gap-12'>
                     <ul className='flex font-medium items-center gap-5'>
