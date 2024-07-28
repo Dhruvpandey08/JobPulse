@@ -16,12 +16,27 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
-const corsOptions = {
-    origin:'*',
-    credentials:true
-}
+const corsOpts = {
+    origin: '*',
+  
+    methods: [
+      'GET',
+      'POST',
+    ],
+  
+    allowedHeaders: [
+      'Content-Type',
+    ],
+  };
+  
+app.use(cors(corsOpts));
+  
+// const corsOptions = {
+//     origin:'*',
+//     credentials:true
+// }
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 3000;
 
