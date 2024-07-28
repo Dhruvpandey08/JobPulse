@@ -16,20 +16,20 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
-const corsOpts = {
-    origin: '*',
+// const corsOpts = {
+//     origin: '*',
   
-    methods: [
-      'GET',
-      'POST',
-    ],
+//     methods: [
+//       'GET',
+//       'POST',
+//     ],
+//     Access-Control-Allow-Origin: *,
+//     allowedHeaders: [
+//       'Content-Type',
+//     ],
+//   };
   
-    allowedHeaders: [
-      'Content-Type',
-    ],
-  };
-  
-app.use(cors(corsOpts));
+app.use(cors());
   
 // const corsOptions = {
 //     origin:'*',
