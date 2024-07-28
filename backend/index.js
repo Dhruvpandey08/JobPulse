@@ -29,14 +29,14 @@ app.use(cookieParser());
 //     ],
 //   };
   
-app.use(cors());
-  
-// const corsOptions = {
-//     origin:'*',
-//     credentials:true
-// }
-
-// app.use(cors(corsOptions));
+app.use(cors(     
+    origin: 'https://jobspulse123.web.app/',
+    methods: [
+      'GET',
+      'POST',
+    ]
+  )
+);
 
 const PORT = process.env.PORT || 3000;
 
